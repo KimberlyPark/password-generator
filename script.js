@@ -24,7 +24,7 @@ alert("Welcome Ramie! You came to the right place to generate a secure random pa
 // ===== while statement: will continue to run as long as condition is true. User enters the length of psw (must be between 8-128 characters )======
 
 while(pswLength > 128 || pswLength < 8){
-  pswLength = prompt("How long would you like your password to be? It can be betwixt 8 -128 characters")
+  pswLength = prompt("How long would you like your password to be? It can be betwixt 8 - 128 character.")
   if(pswLength > 128 || pswLength < 8){
 // if password does not fall within these parameters - alert is triggererd  (at least 8 characters and no more than 128 characters) 
     alert("Please enter a value betwixt 8 and 128!")
@@ -37,7 +37,7 @@ var criteriaList = []
 while(lowerCase===false && upperCase===false && numericCharacters===false && specialCharacters===false){
 
  // ALERT - Ask if user wants Password WITH Lowercase 
-  var lowerCase = confirm("Would you like your password to have lowercase letters?")
+  var lowerCase = confirm("Would you like your password to have lowercase letters? Please press 'OK' for 'yes', 'Cancel' for 'no'.")
 
 // User selected "OK" to lowercase character in psw...
   if(lowerCase){
@@ -46,20 +46,20 @@ while(lowerCase===false && upperCase===false && numericCharacters===false && spe
   }
 
  // ALERT - Ask if user want password with Uppercase
-  var upperCase = confirm("Would you like your password to have uppercase letters?")
+  var upperCase = confirm("Would you like your password to have uppercase letters? Please press 'OK' for 'yes', 'Cancel' for 'no'.")
   if(upperCase){
 
   // User selected "OK" to uppercase letters in psw...
     criteriaList.push('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''))
   }
   // ALERT - Ask if user wants Password WITH Numbers
-  var numericCharacters = confirm("Would you like your password to have numbers?")
+  var numericCharacters = confirm("Would you like your password to have numbers? Please press 'OK' for 'yes', 'Cancel' for 'no'.")
   // User selected "OK" to numeric characters in psw...
   if(numericCharacters){
     criteriaList.push('0123456789Z'.split(''))
   }
     // ALERT - Ask if user wants Password WITH Special Characters
-  var specialCharacters = confirm("I knnow you are married to a special charater, but would you like special characters in your password? (ex; @#$%&*)")
+  var specialCharacters = confirm("I know you are married to a special character, but would you like special characters in your password? Please press 'OK' for 'yes', 'Cancel' for 'no'.(ex; @#$%&*)")
 
   // User selected "OK" to special characters in psw...
   if(specialCharacters){
