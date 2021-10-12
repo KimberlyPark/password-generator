@@ -24,7 +24,7 @@ alert("Welcome Ramie! You came to the right place to generate a secure random pa
 // ===== while statement: will continue to run as long as condition is true. User enters the length of psw (must be between 8-128 characters )======
 
 while(pswLength > 128 || pswLength < 8){
-  pswLength = prompt("How long would you like your password to be? It can be betwixt 8 - 128 character.")
+  pswLength = prompt("How long would you like your password to be? It can be betwixt 8 - 128 characters.")
   if(pswLength > 128 || pswLength < 8){
 // if password does not fall within these parameters - alert is triggererd  (at least 8 characters and no more than 128 characters) 
     alert("Please enter a value betwixt 8 and 128!")
@@ -59,7 +59,7 @@ while(lowerCase===false && upperCase===false && numericCharacters===false && spe
     criteriaList.push('0123456789Z'.split(''))
   }
     // ALERT - Ask if user wants Password WITH Special Characters
-  var specialCharacters = confirm("I know you are married to a special character, but would you like special characters in your password? Please press 'OK' for 'yes', 'Cancel' for 'no'.(ex; @#$%&*)")
+  var specialCharacters = confirm("I know you married a special character, but would you like special characters in your password? (ex; @#$%&*) Please press 'OK' for 'yes', 'Cancel' for 'no'.")
 
   // User selected "OK" to special characters in psw...
   if(specialCharacters){
