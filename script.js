@@ -9,7 +9,7 @@ function writePassword() {
 }
 function generatePassword() {
 
- 
+  
   // Below is a list of all password Criteria:
   
   var pswLength = 0
@@ -24,10 +24,10 @@ alert("Welcome Ramie! You came to the right place to generate a secure random pa
 // ===== while statement: will continue to run as long as condition is true. User enters the length of psw (must be between 8-128 characters )======
 
 while(pswLength > 128 || pswLength < 8){
-  pswLength = prompt("How long would you like  your passwored to be? Please enter a number betwixt 8 - 128")
+  pswLength = prompt("Please enter your desired password length, Ramie :)")
   if(pswLength > 128 || pswLength < 8){
 // if password does not fall within these parameters - alert is triggererd  (at least 8 characters and no more than 128 characters) 
-    alert("Please enter a number betwixt 8 and 128!")
+    alert("Please enter a value between 8 and 128!")
    
   }
 }
@@ -37,7 +37,7 @@ var criteriaList = []
 while(lowerCase===false && upperCase===false && numericCharacters===false && specialCharacters===false){
 
  // ALERT - Ask if user wants Password WITH Lowercase 
-  var lowerCase = confirm("Would you like your password to have lowercase characters?")
+  var lowerCase = confirm("Would you like your password to have lowercase characters??")
 
 // User selected "OK" to lowercase character in psw...
   if(lowerCase){
@@ -46,7 +46,7 @@ while(lowerCase===false && upperCase===false && numericCharacters===false && spe
   }
 
  // ALERT - Ask if user want password with Uppercase
-  var upperCase = confirm("Would you like your pass word to have uppercase characters?")
+  var upperCase = confirm("Do you need upppercase characters in your password?")
   if(upperCase){
 
   // User selected "OK" to uppercase letters in psw...
@@ -59,7 +59,7 @@ while(lowerCase===false && upperCase===false && numericCharacters===false && spe
     criteriaList.push('0123456789Z'.split(''))
   }
     // ALERT - Ask if user wants Password WITH Special Characters
-  var specialCharacters = confirm("Even though you married one, would you like special characters in your password?")
+  var specialCharacters = confirm("Do you need special characters in your password?")
 
   // User selected "OK" to special characters in psw...
   if(specialCharacters){
